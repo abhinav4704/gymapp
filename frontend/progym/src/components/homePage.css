@@ -1,0 +1,23 @@
+body
+{
+    background-color: #190b2500;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.cards {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Use space-between for even distribution */
+    padding: 20px; /* Add padding around the cards container */
+}
+
+
+.title h1{
+    text-align: center;
+}
+
+.title h2{
+    text-align: center;
+}

@@ -1,0 +1,73 @@
+.chg{
+    width: 40px;
+    height: 40px;
+    
+    
+    border-radius: 50%;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Adjust the font size of the symbols */
+    line-height: 1; /* Remove extra line height */
+    padding: 0; /* Remove padding */
+    margin: 0 5px; /* Spacing between buttons and input */
+    background-color: rgba(0, 0, 0, 0.019);
+}
+.chgbuttons{
+    display: flex;
+    position: absolute;
+    right: 0;
+    
+}
+.inp{
+    background-color: transparent;
+    border: none;
+    width: 50px;    
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+.ecard {
+    background-color: rgba(240, 248, 255, 5%); /* Slightly more opaque for better visibility */
+    width: calc(33.33% - 20px); /* Responsive width with margin adjustment */
+    border-radius: 24px; /* Rounded corners */
+    padding: 20px; /* Inner padding for content */
+    margin: 10px; /* Margin between cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1); /* Subtle shadow for depth */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+.ecard:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.exdata {
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Horizontal layout */
+    position: relative; /* Relative positioning */
+    font-size: x-large; /* Large font size */
+    align-items: center; /* Center items vertically */
+}
+
+
+.workoutdata h2{
+    padding-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    background-color: #190b2500; /* Transparent background */
+    font-family: 'Roboto', sans-serif; /* Base font */
+}
+
+@media (max-width: 768px) {
+    .ecard {
+        width: calc(50% - 20px); /* 2 cards in a row for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .ecard {
+        width: calc(100% - 20px); /* 1 card in a row for mobile */
+    }
+}
